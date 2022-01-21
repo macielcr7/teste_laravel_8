@@ -25,7 +25,7 @@ class PlateVehicle implements Rule
      */
     public function passes($attribute, $value)
     {
-        $regex = '/[A-Z]{3}[0-9]{4}/';
+        $regex = '/[A-Z]{3}[0-9][0-9A-Z][0-9]{2}/';
         return preg_match($regex, $value) === 1;
     }
 

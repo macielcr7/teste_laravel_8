@@ -41,7 +41,7 @@
             this.value = this.value.toUpperCase();
         });
         jQuery.validator.addMethod('plate', function (value, element) {
-            return this.optional(element) || /^[A-Z]{3}[0-9]{4}$/.test(value);
+            return this.optional(element) || /^[A-Z]{3}[0-9][0-9A-Z][0-9]{2}$/.test(value);
         }, '{{ __('vehicle.plate_validation') }}');
 
         $("#form-data").validate({

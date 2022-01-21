@@ -15,6 +15,6 @@ return [
         'motorcycle' => 'Motorcycle',
     ],
     
-    'plate_validation' => 'The plate must be in the format AAA0000.',
+    'plate_validation' => 'The plate must be in the format AAA0000 or AAA0A00.',
     'vehicle_not_you_modify' => 'The vehicle is not yours to modify.',
 ];
